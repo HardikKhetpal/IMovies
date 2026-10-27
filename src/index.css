@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-primary: #0a0c0f;
+    --bg-secondary: #12151c;
+    --bg-card: #181d26;
+    --accent-red: #e50914;
+    --accent-glow: rgba(229, 9, 20, 0.4);
+  }
+
+  body {
+    background-color: var(--bg-primary);
+    color: #f3f4f6;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    overflow-x: hidden;
+  }
+}
+
+/* Custom Cinema Glows & Gradients */
+.cinema-gradient-overlay {
+  background: linear-gradient(180deg, rgba(10, 12, 15, 0.1) 0%, rgba(10, 12, 15, 0.8) 70%, #0a0c0f 100%);
+}
+
+.cinema-glass {
+  background: rgba(24, 29, 38, 0.85);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.cinema-glass-card {
+  background: linear-gradient(145deg, rgba(28, 34, 46, 0.9), rgba(18, 21, 28, 0.95));
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.cinema-glow {
+  box-shadow: 0 0 25px rgba(229, 9, 20, 0.35);
+}
+
+.cinema-glow-sm {
+  box-shadow: 0 0 15px rgba(229, 9, 20, 0.25);
+}
+
+/* Screen Curve Effect */
+.screen-curve {
+  width: 75%;
+  height: 12px;
+  background: linear-gradient(90deg, transparent, #ffffff, transparent);
+  border-radius: 50% 50% 0 0;
+  box-shadow: 0 4px 25px rgba(255, 255, 255, 0.6);
+  margin: 0 auto;
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0c0f;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #232936;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #e50914;
+}
